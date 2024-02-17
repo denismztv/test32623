@@ -1,0 +1,753 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .5s all ease;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Jura";
+    color: #333333;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.section {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* header-banner */
+.header-banner {
+    background: url(../img/glav/banner/banner-fon.png) no-repeat;
+    /* background-size: cover; */
+    height: 100vh;
+}
+
+header {
+    padding-top: 30px;
+}
+
+.logo img:hover {
+    filter: drop-shadow(0 4px 6px rgba(115, 81, 132, 0.541));
+}
+
+.header-block {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background: #F3F3F3;
+}
+
+nav a {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14%;
+}
+
+h1 {
+    color: #FFF;
+    text-shadow: 0px 0px 23.5px #FFF;
+    font-family: Jura;
+    font-size: 96px;
+    font-weight: 700;
+    padding-bottom: 80px;
+}
+
+.btn-banner a {
+    color: #333;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 10px 60px;
+    border-radius: 20px;
+    background: #F3F3F3;
+}
+
+.btn-banner a:hover {
+    background: rgb(115, 81, 132);
+    color: white;
+}
+
+.korz-like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* header-banner */
+
+/* popular */
+.pop {
+    margin-top: 120px;
+}
+
+h2 {
+    font-size: 54px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pop-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px;
+    padding-top: 120px;
+}
+
+.ked-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 280px;
+    width: 400px;
+}
+
+.ked-img img {
+    height: 158px;
+}
+
+.ked-text {
+    display: inline-flex;
+    height: 86px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    /* width: 400px; */
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.ked-img-abs {
+    display: flex;
+    justify-content: center;
+    /* width: 400px; */
+}
+.ked-img-abs img {
+    position: absolute;
+    border-radius: 30px;
+}
+
+.ked-img-abs p {
+    opacity: 0;
+    position: relative;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    top: 120px;
+    background-color: #333;
+    border-radius: 30px;
+}
+
+.ked-img:hover p {
+    opacity: 1;
+}
+
+.ked-text {
+    position: relative;
+    top: 130px;
+}
+
+.ked-price {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.inkorz-like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.inkorz-like a:hover {
+    background: rgb(115, 81, 132);
+
+}
+
+.ked-korz {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 4px 10px;
+    gap: 10px;
+    border-radius: 20px;
+    background: rgba(115, 81, 132, 0.80);
+}
+
+.ked-like {
+    display: flex;
+    padding: 4px 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: rgba(115, 81, 132, 0.80);
+}
+/* popular */
+
+/* katalog */
+.kat {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.kat-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 80px;
+}
+
+.kat-img1 {
+    border-radius: 30px;
+    background: url(../img/glav/katalog/kat1.png);
+    background-repeat: no-repeat;
+    height: 390px;
+    width: 690px;
+
+    display: inline-flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.kat-cards p {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.kat-cards p:hover {
+    padding-left: 20px;
+}
+
+
+.kat-img2 {
+    border-radius: 30px;
+    background: url(../img/glav/katalog/kat2.png);
+    background-repeat: no-repeat;
+    height: 390px;
+    width: 690px;
+
+    display: inline-flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.kat-img3 {
+    border-radius: 30px;
+    background: url(../img/glav/katalog/kat3.png);
+    background-repeat: no-repeat;
+    height: 390px;
+    width: 808px;
+
+    display: inline-flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.kat-img4 {
+    border-radius: 30px;
+    background: url(../img/glav/katalog/kat4.png);
+    background-repeat: no-repeat;
+    height: 390px;
+    width: 572px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+/* katalog */
+
+/* footer */
+footer {
+    background: #333333;
+    padding-top: 50px;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-soc {
+    display: flex;
+    gap: 116px;
+}
+
+.nav-raz {
+    display: flex;
+    gap: 116px;
+}
+
+.nav-raz a {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: start;
+}
+
+.zag {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-text a {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-up img {
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+/* footer */
+
+
+
+
+
+/* adaptiv glav */
+@media screen and (max-width: 430px) {
+    .section {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding-top: 15px;
+    }
+
+    .banner {
+        padding-top: 60%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 56px;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 30px;;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .btn-banner a {
+        font-size: 30px;
+    }
+
+    .pop h2 {
+        margin-top: 30px;
+    }
+
+    .pop-cards {
+        justify-content: center;
+        padding-top: 80px;
+        gap: 70px;
+    }
+
+    .ked-card {
+        gap: 40px;
+        width: 320px;
+    }
+
+    .price {
+        width: 320px;
+    }
+
+    .ked-korz {
+        font-size: 16px;
+    }
+
+    .ked-like img {
+        width: 20px;
+    }
+}
+/* adaptiv glav */
+
+
+
+
+
+
+
+
+
+
+
+/* katalog2 */
+
+.katalog h4 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333c4;
+}
+
+h4 a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333c4; 
+}
+
+.katalog-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sortir {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.arrow-sort {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.p-black {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.p-gray {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.p-gray:hover {
+    color: #333333;
+    cursor: pointer;
+}
+
+.p-gray-stat {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.search {
+    border: 2px solid #333333;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 200px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-search {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 0.47);
+}
+
+.katalog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px;
+    padding-top: 120px;
+}
+
+.pagin {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.pagin-1 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.pagin-123 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #3333337c;
+    cursor: pointer;
+}
+
+.pagin-123:hover {
+    color: #333333;
+}
+/* katalog2rgb(51, 51, 51)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* modal  */
+.modal-dark{
+    position: relative;
+}
+
+.test-class {
+    width: 100%;
+    height: 2975px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.767);
+}
+
+.modal {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 60px;
+    position: absolute;
+    /* align-items: center; */
+    z-index: 20;
+    top: 150px;
+    right: 0;
+    left: 0;
+}
+
+.btn-modal {
+    margin-bottom: 20px;
+}
+
+.close-img {
+    display: flex;
+    align-items: start;
+}
+
+.imgimg {
+    margin-top: 120px;
+}
+
+.modal-text {
+    width: 430px;
+}
+
+.name-ked {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.modal-razmer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 40px;
+    padding-bottom: 140px;
+}
+
+.itog-price {
+    padding-bottom: 44px;
+}
+
+.razmer-card {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 400;
+    padding: 10px 0px;
+    background: #ECECEC;
+    border-radius: 12px;
+    width: 86px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.razmer-card:hover {
+    background: #333333;
+    color: #FFF;
+}
+
+.modal-price {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.span-modal {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.btn-modal a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 70px;
+    background: rgba(115, 81, 132, 0.8);
+    border-radius: 20px;
+}
+
+.btn-modal a:hover {
+    background: rgba(115, 81, 132);
+}
+/* modal  */
+
+
+
+
+
+
+
+
+
+
+
+/* odin */
+.odin h4 {
+    padding: 40px 0;
+
+}
+
+.price-atr {
+    display: flex;
+    gap: 16px;
+}
+
+.price-odin {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.odin-big-text {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.price-art {
+    font-weight: 500;
+    font-size: 20px;
+    color: #333333b4;
+}
+/* odin */
+
+
