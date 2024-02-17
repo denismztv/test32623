@@ -43,6 +43,10 @@
     margin: 0 auto;
 }
 
+.none {
+    display: none;
+}
+
 /* header-banner */
 .header-banner {
     background: url(../img/glav/banner/banner-fon.png) no-repeat;
@@ -171,6 +175,7 @@ h3 {
     justify-content: center;
     /* width: 400px; */
 }
+
 .ked-img-abs img {
     position: absolute;
     border-radius: 30px;
@@ -242,6 +247,7 @@ h3 {
     border-radius: 20px;
     background: rgba(115, 81, 132, 0.80);
 }
+
 /* popular */
 
 /* katalog */
@@ -324,6 +330,7 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+
 /* katalog */
 
 /* footer */
@@ -389,75 +396,8 @@ footer {
     padding-right: 50px;
     padding-bottom: 20px;
 }
+
 /* footer */
-
-
-
-
-
-/* adaptiv glav */
-@media screen and (max-width: 430px) {
-    .section {
-        width: 400px;
-        margin: 0 auto;
-    }
-
-    header {
-        padding-top: 15px;
-    }
-
-    .banner {
-        padding-top: 60%;
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 56px;
-        width: 100%;
-    }
-
-    .logo img {
-        height: 30px;;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .btn-banner a {
-        font-size: 30px;
-    }
-
-    .pop h2 {
-        margin-top: 30px;
-    }
-
-    .pop-cards {
-        justify-content: center;
-        padding-top: 80px;
-        gap: 70px;
-    }
-
-    .ked-card {
-        gap: 40px;
-        width: 320px;
-    }
-
-    .price {
-        width: 320px;
-    }
-
-    .ked-korz {
-        font-size: 16px;
-    }
-
-    .ked-like img {
-        width: 20px;
-    }
-}
-/* adaptiv glav */
-
-
 
 
 
@@ -483,7 +423,7 @@ h4 {
 h4 a {
     font-size: 16px;
     font-weight: 400;
-    color: #333333c4; 
+    color: #333333c4;
 }
 
 .katalog-search {
@@ -582,9 +522,8 @@ h4 a {
 .pagin-123:hover {
     color: #333333;
 }
-/* katalog2rgb(51, 51, 51)
 
-
+/* katalog2 */
 
 
 
@@ -607,7 +546,7 @@ h4 a {
 
 
 /* modal  */
-.modal-dark{
+.modal-dark {
     position: relative;
 }
 
@@ -710,6 +649,7 @@ h4 a {
 .btn-modal a:hover {
     background: rgba(115, 81, 132);
 }
+
 /* modal  */
 
 
@@ -725,7 +665,30 @@ h4 a {
 /* odin */
 .odin h4 {
     padding: 40px 0;
+}
 
+.odin-ked {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.odin-text {
+    width: 572px;
+}
+
+.odin-img {
+    width: 700px;
+}
+
+.odin-img img:hover {
+    transform: scale(1.1);
+}
+
+.name-ked {
+    height: 56px;
+    margin-bottom: 10px;
 }
 
 .price-atr {
@@ -748,6 +711,320 @@ h4 a {
     font-size: 20px;
     color: #333333b4;
 }
+
+.odin-big-text {
+    margin: 30px 0;
+}
+
+.odin-razmer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.odin-korz-like {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.odin-korz {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(115, 81, 132, 0.8);
+    padding: 10px 16px;
+    border-radius: 20px;
+}
+
+.odin-korz:hover {
+    background: rgba(115, 81, 132);
+}
+
+.odin-like {
+    padding: 9px 13px;
+    background: rgba(115, 81, 132, 0.8);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.odin-like:hover {
+    background: rgba(115, 81, 132);
+}
+
 /* odin */
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* adaptiv */
+@media screen and (max-width: 430px) {
+    .section {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding-top: 15px;
+    }
+
+    .banner {
+        padding-top: 60%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 56px;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 30px;
+        ;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .btn-banner a {
+        font-size: 30px;
+    }
+
+
+    .pop h2 {
+        margin-top: 30px;
+    }
+
+    .pop-cards {
+        justify-content: center;
+        padding-top: 80px;
+        gap: 70px;
+    }
+
+    .katalog-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 70px;
+        padding-top: 120px;
+        align-items: center;
+    }
+
+    .ked-card {
+        gap: 40px;
+        width: 320px;
+    }
+
+    .price {
+        width: 320px;
+    }
+
+    .ked-korz {
+        font-size: 16px;
+    }
+
+    .ked-like img {
+        width: 20px;
+    }
+
+
+    h2 {
+        margin-top: 60px;
+    }
+
+    .kat-cards {
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 15px;
+        gap: 15px;
+    }
+
+    .kat-img1, .kat-img2, .kat-img3, .kat-img4 {
+        width: 400px;
+        height: 300px;
+    }
+
+    .kat-cards p {
+        font-size: 32px;
+    }
+
+
+
+    footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-text {
+        gap: 8px;
+    }
+
+    .cont-soc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .zag {
+        font-size: 20px;
+    }
+
+    .footer-text a {
+        font-size: 20px;
+    }
+
+    .nav-raz {
+        display: none;
+    }
+
+    .footer-up {
+        display: none;
+    }
+
+
+
+
+
+    .katalog>h4>a {
+        font-size: 20px;
+    }
+
+    .katalog h4 {
+        padding-top: 26px;
+        padding-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .katalog-search {
+        display: flex;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .katalog-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 70px;
+        padding-top: 80px;
+        align-items: center;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .katalog-search {
+        flex-wrap: wrap;
+    }
+
+    .katalog-search h2 {
+        margin-top: 0px;
+    }
+
+    .sortir p {
+        font-size: 12px;
+        gap: 20px;
+    }
+
+    .sortir {
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+    }
+
+    .arrow-sort img {
+        width: 14px;
+    }
+
+    .sort {
+        gap: 8px;
+    }
+
+    .pagin {
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+
+
+
+
+
+
+
+
+    .odin>h4>a {
+        font-size: 20px;
+    }
+
+    .odin h4 {
+        padding-top: 26px;
+        padding-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .odin-ked {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .odin-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        justify-content: space-between;
+    }
+
+    .ked-odin-big-img {
+        width: 400px;
+    }
+
+    .ked-odin-img {
+        height: 60px;
+    }
+
+    .none {
+        display:block;
+    }
+
+    .odin-text {
+        padding-top: 20px;
+        width: 400px;
+    }
+    
+    .odin-razmer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        width: 400px;
+        justify-content: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .razmer-card {
+        font-size: 17px;
+    }
+}
+
+/* adaptiv */
